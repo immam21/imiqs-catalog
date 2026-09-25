@@ -65,7 +65,7 @@ main.has-bar{padding-bottom:6.5rem}
 .sel.wide{width:100%;padding:.7rem;text-align:center;border-radius:6px;margin-top:1rem}
 
 /* Lightbox */
-.lb{position:fixed;inset:0;background:rgba(42,22,32,.8);display:grid;place-items:center;padding:1rem;z-index:30;overflow:auto}
+.lb{position:fixed;inset:0;background:rgba(42,22,32,.8);display:grid;place-items:center;padding:1rem 1rem 5.5rem;z-index:30;overflow:auto}
 .sheet{position:relative;background:var(--paper);width:min(600px,100%);max-height:100%;overflow:auto;border-radius:8px}
 .sheet-pic{aspect-ratio:4/5;background:#f1e4d6}
 .sheet-pic img{width:100%;height:100%;object-fit:cover}
@@ -81,6 +81,6 @@ main.has-bar{padding-bottom:6.5rem}
 .desc{color:var(--muted);margin-top:.6rem}
 
 /* Sticky WhatsApp bar */
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--wine-deep);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.85rem 1.25rem;padding-bottom:calc(.85rem + env(safe-area-inset-bottom,0px))}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--wine-deep);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.85rem 1.25rem;padding-bottom:calc(.85rem + env(safe-area-inset-bottom,0px));box-shadow:0 -2px 12px rgba(0,0,0,.25)}
 .bar span{font-size:.92rem}
 .bar button{display:inline-flex;align-items:center;gap:.5rem;background:var(--whatsapp);color:#083619;font-weight:600;padding:.6rem 1.1rem;border-radius:99px;font-size:.92rem}

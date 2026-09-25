@@ -119,7 +119,7 @@ export default function Catalog({ products, phone }) {
       {chosen.length > 0 && (
         <div className="bar">
           <span>{chosen.length} selected · {inr(total)}</span>
-          <button onClick={send}><WhatsAppIcon /> Confirm on WhatsApp</button>
+          <button onClick={send}><WhatsAppIcon /> Order via WhatsApp</button>
         </div>
       )}
     </main>
