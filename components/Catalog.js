@@ -42,7 +42,7 @@ export default function Catalog({ products, phone }) {
   return (
     <main className={chosen.length ? 'has-bar' : ''}>
       <header className="top">
-        <p className="mark">Imiqs</p>
+        <p className="mark">IFJ - Imiqs Fashion & Jewelry</p>
         <h1>Fashion jewellery, chosen by hand</h1>
         <p className="sub">Tap a piece to look closer. Select what you love, and confirm on WhatsApp.</p>
       </header>
