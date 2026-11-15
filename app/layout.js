@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Imiqs Fashion Jewellery',
-  description: 'Browse our jewellery collection and order on WhatsApp.',
+  title: 'Imiqs Fashion Jewellery | Luxury Collection',
+  description: 'Browse luxury jewellery, curated statement pieces, and enquire over WhatsApp.',
 };
 
 export default function RootLayout({ children }) {
