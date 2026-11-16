@@ -103,7 +103,7 @@ export default function Catalog({ products, phone }) {
           <ul className="hero-metrics">
             <li><strong>1200+</strong><span>curated pieces</span></li>
             <li><strong>4.9/5</strong><span>client love</span></li>
-            <li><strong>24h</strong><span>WhatsApp replies</span></li>
+            <li><strong>24*7</strong><span>WhatsApp replies</span></li>
           </ul>
         </div>
 
@@ -115,20 +115,11 @@ export default function Catalog({ products, phone }) {
             <div className="visual-card short">
               {heroProducts[1] && <img src={heroProducts[1].images[0].full} alt={heroProducts[1].name} />}
             </div>
-            <div className="visual-card badge-card">
-              <span className="mini-label">Bespoke Edit</span>
-              <strong>Wedding & occasion</strong>
-              <p>Designed with timeless detailing</p>
+            <div className="visual-card short secondary-shot">
+              {heroProducts[2] && <img src={heroProducts[2].images[0].full} alt={heroProducts[2].name} />}
             </div>
           </div>
         </div>
-      </section>
-
-      <section className="feature-strip">
-        <div><span>Certified quality</span></div>
-        <div><span>Premium craftsmanship</span></div>
-        <div><span>Made to gift</span></div>
-        <div><span>Fast WhatsApp support</span></div>
       </section>
 
       <section className="collection-overview" id="collections">
