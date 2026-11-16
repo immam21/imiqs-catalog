@@ -1,7 +1,8 @@
 import Catalog from '../components/Catalog';
 import { getProducts } from '../lib/catalog';
 
-export const revalidate = 300; // refresh sheet data every 5 minutes
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export default async function Page() {
   let products = [];
