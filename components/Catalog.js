@@ -129,15 +129,17 @@ export default function Catalog({ products, phone }) {
         </div>
         <div className="collection-grid">
           {cats.filter((c) => c !== 'All').slice(0, 3).map((category) => {
-            const items = products.filter((p) => p.category === category).slice(0, 2);
+            const items = products.filter((p) => p.category === category);
+            const firstItem = items[0];
+            const count = items.length;
             return (
               <button key={category} className="collection-card" onClick={() => setCat(category)}>
                 <div className="collection-image">
-                  {items[0] && <img src={items[0].images[0].full} alt={category} />}
+                  {firstItem && <img src={firstItem.images[0].full} alt={category} />}
                 </div>
                 <div className="collection-copy">
                   <span>{category}</span>
-                  <strong>{items.length} signature pieces</strong>
+                  <strong>{count} {count === 1 ? 'signature piece' : 'signature pieces'}</strong>
                 </div>
               </button>
             );
